@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do List</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
-    <div class="conatiner_main">
-        <div class="sub_conatainer">
-            <h1>To Do List</h1>
-        </div>
-       <section>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container_main">
+      <div class="title_container">
+        <h1>To Do List</h1>
+      </div>
+      <section>
         <div class="container_addtask">
-            <input type="text" class="txt_task" placeholder="Enter task to do">
-            <button style="font-size:24px" id="btn_save" onclick="add_task()"> <i class="fa fa-save"></i></button>
-            <button style="font-size:14px" onclick="clearall()">Clear All</i></button>
+          <input type="text" class="txt_task" placeholder="Enter task to do" />
+          <button style="font-size: 32px" id="btn_plus" onclick="add_task()">
+            <i class="fa fa-plus"></i>
+          </button>
         </div>
-        <div class="container_displaytask">
-            <ul>
-                 <li class="task"><lable><p>Task name</p></lable>
-            
-           <div class="settings">
-            <i class="fa fa-edit" style="font-size:24px;color: green;" onclick="edit_task()"></i>
-            <i class="fa fa-trash-o" style="font-size:24px;color: red;" onclick="delete_task()"></i>
-           </div>
-        </li>
-        <li class="task"><lable><p>Task name</p></lable>
-            
-            <div class="settings">
-                <i class="fa fa-edit" style="font-size:24px;color: green;" onclick="edit_task()"></i>
-                <i class="fa fa-trash-o" style="font-size:24px;color: red;" onclick="delete_task()"></i>
-            </div>
-         </li>
-            </ul>
-        </div>
-       </section>
 
+        <div class="container_clearall">
+          <button class="clear_all_button" onclick="clearall()">
+            <p>Clear all tasks</p>
+          </button>
+        </div>
+
+        <div class="container_displaytask">
+          <ul class="task-list">
+            <li class="task">
+              <label class="task-label">Supermarket</label>
+
+              <div class="actions">
+                <i
+                  class="fa fa-edit"
+                  style="font-size: 24px"
+                  onclick="edit_task()"
+                ></i>
+                <i
+                  class="fa fa-trash-o"
+                  style="font-size: 24px"
+                  onclick="delete_task()"
+                ></i>
+              </div>
+            </li>
+
+            <li class="task">
+              <label class="task-label">Dentist appointment</label>
+
+              <div class="actions">
+                <i
+                  class="fa fa-edit"
+                  style="font-size: 24px"
+                  onclick="edit_task()"
+                ></i>
+                <i
+                  class="fa fa-trash-o"
+                  style="font-size: 24px"
+                  onclick="delete_task()"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
     <!--Pranita-->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

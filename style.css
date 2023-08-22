@@ -1,2 +1,147 @@
+/*Jennifer */
 
-/*Jannifer */
+/* Colors used
+dk grey: #272829
+mid grey: #61677A
+lt grey: #D8D9DA
+lt green:#628500
+pink:#d35595 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vh;
+  height: 100vh;
+  margin: auto;
+}
+
+.title_container {
+  background-color: #272829;
+  color: white;
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* beginning of container for adding a task */
+.container_addtask {
+  background-color: #61677a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.txt_task {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  width: 50vh;
+  height: 53px;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#btn_plus {
+  background-color: white;;
+  border: none;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#btn_plus:hover {
+  background-color: #272829;
+  color: white;
+}
+/* end of container for adding a task */
+
+/* beginning of container for the Clear All button */
+.container_clearall {
+  background-color: #61677a;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear_all_button {
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.clear_all_button:hover {
+  background-color: #272829;
+  color: white;
+}
+/* end of container for the Clear All button */
+
+/* beginning of container for new tasks */
+.container_displaytask {
+  background-color: #d8d9da;
+  border-radius: 0 0 2rem 2rem;
+  height: 69.25vh;
+  display: flex;
+  justify-content: center;
+}
+
+.task {
+  list-style-type: none;
+  border-radius: 2rem;
+  width: 70vh;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-label {
+  background: white;
+  height: 59px;
+  width: 50vh;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.fa-edit {
+  background-color: white;
+  color: #628500;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.fa-edit:hover {
+  background-color: #628500;
+  color: white;
+}
+
+.fa-trash-o {
+  background-color: white;
+  color: #d35595;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash-o:hover {
+  background-color:#d35595;
+  color: white;
+}
+/* end of container for new tasks */
