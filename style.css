@@ -50,7 +50,7 @@ body {
 }
 
 #btn_plus {
-  background-color: white;;
+  background-color: white;
   border: none;
   border-radius: 1rem;
   margin: 0.5rem;
@@ -73,7 +73,7 @@ body {
   align-items: center;
 }
 
-.clear_all_button {
+#clear_all_button {
   background-color: white;
   border: none;
   border-radius: 1rem;
@@ -83,7 +83,7 @@ body {
   cursor: pointer;
 }
 
-.clear_all_button:hover {
+#clear_all_button:hover {
   background-color: #272829;
   color: white;
 }
@@ -141,7 +141,13 @@ body {
 }
 
 .fa-trash-o:hover {
-  background-color:#d35595;
+  background-color: #d35595;
   color: white;
 }
 /* end of container for new tasks */
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 125px;
+}
