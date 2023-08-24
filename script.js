@@ -44,6 +44,11 @@ const add_task = () => {
     newLabel.innerHTML = inputText.value;
     inputText.value = "";
   });
+
+  newLabel.addEventListener("click", () => {
+    newLabel.style = "text-decoration: line-through";
+    newListItem.style.color = "green";
+  });
 };
 
 const clearall = () => {
